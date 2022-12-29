@@ -4,10 +4,96 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Tables and Forms</title>
+    <style>
+      table, th, td {
+        border: 1px solid gray;
+        padding: 10px;
+        border-collapse: collapse;
+      }
+      td {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <main>
       <!-- Complete the Exercises HERE -->
+      <table>
+        <thead>
+          <tr>
+            <th>Soda Names</th>
+            <th>Total Servings</th>
+            <th>Serving Size</th>
+            <th>Calories</th>
+            <th>Carbs</th>
+            <th>Sugars</th>
+            <th>sodium</th>
+          </tr>
+        </thead>
+      <tbody>
+        <tr>
+          <td>Coca Cola</td>
+          <td>1</td>
+          <td>12 oz</td>
+          <td>140</td>
+          <td>39g</td>
+          <td>39g</td>
+          <td>45mg</td>
+        </tr>
+        <tr>
+          <td>Pepsi</td>
+          <td>1</td>
+          <td>12oz</td>
+          <td>150</td>
+          <td>41g</td>
+          <td>41g</td>
+          <td>30mg</td>
+        </tr>
+        <tr>
+          <td>Coca Cola Zero</td>
+          <td>1</td>
+          <td>12oz</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>40mg</td>
+        </tr>
+        <tr>
+          <td>Dr. Pepper</td>
+          <td>1</td>
+          <td>12oz</td>
+          <td>150</td>
+          <td>40g</td>
+          <td>40g</td>
+          <td>55mg</td>
+        </tr>
+        <tr>
+          <td>Mountaain Dew</td>
+          <td>1</td>
+          <td>12oz</td>
+          <td>170</td>
+          <td>46g</td>
+          <td>46g</td>
+          <td>60mg</td>
+        </tr>
+      </tbody>
+        
+      </table>
+      <form>
+        <label for="servings">Total Servings</label>
+        <input type="text" id="servings" name="serving">
+        <label for="servingSize">Serving Size</label>
+        <input type="text" id="servingSize" name="servingS">
+        <label for="calories">Calories Per Serving</label>
+        <input type="text" id="calories" name="calories">
+        <label for="carbs">Carbs Per Serving</label>
+        <input type="text" id="carbs" name="carbs">
+        <label for="sugars">Sugars Per Serving</label>
+        <input type="text" id="sugars" name="sugar">
+        <label for="sodium">Sodium Per Serving</label> 
+        <input type="text" id="sodium" name="Sodium">
+        <button type="submit'">Submit</button>
+      </form>
     </main>
   </body>
 </html>
